@@ -157,8 +157,9 @@ export default {
         fetch('https://ruralparcel-backend1.herokuapp.com/territory', {
           method: 'DELETE',
           headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
+                'Access-Control-Allow-Origin': '*',
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
           },
 
           body: JSON.stringify({'id': id})
